@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+#id1{
+    text-align: center;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    left: 550px;
+    top: 66px;
+}
+.c1{
+    padding: 20px;
+    border-style: solid;
+    border-color: blue;
+}
+.c2{
+    padding: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-left: 0px;
+}
