@@ -1,0 +1,61 @@
+function is_array(para){
+    return Array.isArray(para);
+    }
+    console.log(is_array('w3resource'));
+    console.log(is_array([1, 2, 4, 0]));
+
+//////////////////////////////////////////////////////////////////
+
+    function array_Clone(para){
+        return para.slice(0);
+      }
+      console.log(array_Clone([1, 2, 4, 0]));
+      console.log(array_Clone([1, 2, [4, 0]]));
+
+
+
+///////////////////////////////////////////////////////////////////////
+      function first(ar,n){
+        if(n<0)
+            return [];
+        if(n===undefined)
+            n=1;
+        return ar.slice(0,n);
+    }
+    console.log(first([7, 9, 0, -2]));
+    console.log(first([],3));
+    console.log(first([7, 9, 0, -2],3));
+    console.log(first([7, 9, 0, -2],6));
+    console.log(first([7, 9, 0, -2],-3));
+
+
+    ////////////////////////////////////////////////////////////
+    function joining(arr){
+     
+        console.log(arr.join());
+        console.log(arr.join("+"));
+}
+myColor = ["Red", "Green", "White", "Black"];
+console.log(joining(myColor));
+
+//////////////////////////////////////////////////////////////////
+
+function myFunction(arr){
+    var elements = new Map();
+    for(var i=0;i<arr.length;i++){
+        if(elements.has(arr[i]))
+        {
+            elements.set(arr[i],elements.get(arr[i])+1);
+        }
+        else
+        {
+            elements.set(arr[i],1);
+        }
+        
+    }
+    //console.log(elements);
+    console.log(Math.max(...elements.values()));
+}
+ var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+myFunction(arr1);
+
